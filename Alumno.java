@@ -16,6 +16,7 @@ public class Alumno {
         edad = edadAlumno;
         int  name = nombre.length();
         int  newnumeroMatricula = numeroMatricula.length();
+        
         if (newnumeroMatricula < 4) {
             System.out.println("El parámetro de matricula es menor a 4 caracteres, tiene que ser igual o mayor a este.");
         }
@@ -51,7 +52,13 @@ public class Alumno {
      * en su cuenta de Github en formato de 7 caracateres
      */
     public String getNombreUsuarioGithub() {
-        return nombre.substring(0, 3) + numeroMatricula.substring(0, 4);
+        int  name = nombre.length();
+        int  newnumeroMatricula = numeroMatricula.length();
+        String nomMatri= nombre + numeroMatricula;
+         if (name < 3 && newnumeroMatricula < 4)  { 
+            
+        }
+        return nomMatri;
     }
 }
     
