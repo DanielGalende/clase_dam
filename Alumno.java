@@ -21,6 +21,7 @@ public class Alumno {
      */
     public String getNombre() {
         return nombre;
+
     }
     
     /**
@@ -42,6 +43,23 @@ public class Alumno {
      * en su cuenta de Github en formato de 7 caracateres
      */
     public String getNombreUsuarioGithub() {
+        int  name = nombre.length();
+        int  newnumeroMatricula = numeroMatricula.length(); 
+        String nombreUsuarioGithub = null;
+        if (name < 3 && newnumeroMatricula < 4) {
+        nombreUsuarioGithub = nombre.substring(0,name) + numeroMatricula.substring(0,newnumeroMatricula);
+        }
+        else if (newnumeroMatricula < 4) {
+        System.out.println("El parámetro de matricula es menor a 4 caracteres, tiene que ser igual o mayor a este.");
+        }
+        else if (name < 3) {
+        System.out.println("El parámetro del nombre es menor a 3 caracteres, tiene que ser igual o mayor a este.");
+        }
+        else {
+        }
         return nombre.substring(0, 3) + numeroMatricula.substring(0, 4);
     }
 }
+    
+    
+    
