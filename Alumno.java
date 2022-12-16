@@ -54,7 +54,8 @@ public class Alumno {
     public String getNombreUsuarioGithub() {
         int  name = nombre.length();
         int  newnumeroMatricula = numeroMatricula.length();
-        String nomMatri= nombre + numeroMatricula;
+        
+        nomMatri= nombre.substring(0,3) + numeroMatricula.substring(0,4);
          if (name < 3 && newnumeroMatricula < 4)  { 
             
         }
