@@ -48,6 +48,7 @@ public class Alumno {
         String nombreUsuarioGithub = null;
         if (name < 3 && newnumeroMatricula < 4) {
             nombreUsuarioGithub = nombre.substring(0,name) + numeroMatricula.substring(0,newnumeroMatricula);
+            return null;
         }
         else if (newnumeroMatricula < 4) {
             System.out.println("El parámetro de matricula es menor a 4 caracteres, tiene que ser igual o mayor a este.");
@@ -56,9 +57,9 @@ public class Alumno {
             System.out.println("El parámetro del nombre es menor a 3 caracteres, tiene que ser igual o mayor a este.");
         }
         else {
-            nombreUsuarioGithub = nombre.substring(0, name) + numeroMatricula.substring(0, newnumeroMatricula);
+            
         }
-        return nombre.substring(0,3) + numeroMatricula.substring(0,4);
+        return nombreUsuarioGithub = nombre.substring(0, 3) + numeroMatricula.substring(0,4);
     }
 }
     
