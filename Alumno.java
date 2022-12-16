@@ -58,7 +58,7 @@ public class Alumno {
         else {
             nombreUsuarioGithub = nombre.substring(0, name) + numeroMatricula.substring(0, newnumeroMatricula);
         }
-        return nombreUsuarioGithub;
+        return nombre.substring(0,3) + numeroMatricula.substring(0,4);
     }
 }
     
