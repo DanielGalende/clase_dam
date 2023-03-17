@@ -69,7 +69,12 @@ public class Alumno {
         
         return usuarioGithub;
     }
+    
+    public String devuelveLosAlumnos() {
+        return "" + nombre + "(" + numeroMatricula + ") "+ edad + " años ";   
+    }
 }
+
     
     
     
